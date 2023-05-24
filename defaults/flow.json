@@ -1,0 +1,2493 @@
+[
+	{
+		"id": "c4bdbce101ee9d27",
+		"type": "tab",
+		"label": "Flow 1",
+		"disabled": false,
+		"info": "",
+		"env": [
+
+		]
+	},
+	{
+		"id": "47e9b769.f10e68",
+		"type": "tab",
+		"label": "Voice Enabled COVID Chatbot",
+		"disabled": true,
+		"info": ""
+	},
+	{
+		"id": "bbf0a28b56acf59d",
+		"type": "tab",
+		"label": "WeatherBot",
+		"disabled": true,
+		"info": "",
+		"env": [
+
+		]
+	},
+	{
+		"id": "abf812f18fa52ccd",
+		"type": "tab",
+		"label": "Flow 2",
+		"disabled": false,
+		"info": "",
+		"env": [
+
+		]
+	},
+	{
+		"id": "cffac7b6.1e36",
+		"type": "ui_tab",
+		"name": "TABNAME",
+		"icon": "dashboard",
+		"disabled": false,
+		"hidden": false
+	},
+	{
+		"id": "980a3852.33025",
+		"type": "ui_base",
+		"theme": {
+			"name": "theme-light",
+			"lightTheme": {
+				"default": "#0094CE",
+				"baseColor": "#0094CE",
+				"baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+				"edited": true,
+				"reset": false
+			},
+			"darkTheme": {
+				"default": "#097479",
+				"baseColor": "#097479",
+				"baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+				"edited": false
+			},
+			"customTheme": {
+				"name": "Untitled Theme 1",
+				"default": "#4B7930",
+				"baseColor": "#4B7930",
+				"baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+			},
+			"themeState": {
+				"base-color": {
+					"default": "#0094CE",
+					"value": "#0094CE",
+					"edited": false
+				},
+				"page-titlebar-backgroundColor": {
+					"value": "#0094CE",
+					"edited": false
+				},
+				"page-backgroundColor": {
+					"value": "#fafafa",
+					"edited": false
+				},
+				"page-sidebar-backgroundColor": {
+					"value": "#ffffff",
+					"edited": false
+				},
+				"group-textColor": {
+					"value": "#1bbfff",
+					"edited": false
+				},
+				"group-borderColor": {
+					"value": "#ffffff",
+					"edited": false
+				},
+				"group-backgroundColor": {
+					"value": "#ffffff",
+					"edited": false
+				},
+				"widget-textColor": {
+					"value": "#111111",
+					"edited": false
+				},
+				"widget-backgroundColor": {
+					"value": "#0094ce",
+					"edited": false
+				},
+				"widget-borderColor": {
+					"value": "#ffffff",
+					"edited": false
+				},
+				"base-font": {
+					"value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+				}
+			},
+			"angularTheme": {
+				"primary": "indigo",
+				"accents": "blue",
+				"warn": "red",
+				"background": "grey",
+				"palette": "light"
+			}
+		},
+		"site": {
+			"name": "Node-RED Dashboard",
+			"hideToolbar": "false",
+			"allowSwipe": "false",
+			"lockMenu": "false",
+			"allowTempTheme": "true",
+			"dateFormat": "DD/MM/YYYY",
+			"sizes": {
+				"sx": 48,
+				"sy": 48,
+				"gx": 6,
+				"gy": 6,
+				"cx": 6,
+				"cy": 6,
+				"px": 0,
+				"py": 0
+			}
+		}
+	},
+	{
+		"id": "7fa34511.0a7d64",
+		"type": "ui_group",
+		"name": "GROUPNAME",
+		"tab": "cffac7b6.1e36",
+		"order": 1,
+		"disp": true,
+		"width": "6",
+		"collapse": false,
+		"className": ""
+	},
+	{
+		"id": "65638bb5.46df9c",
+		"type": "ui_group",
+		"name": "Chat",
+		"tab": "cffac7b6.1e36",
+		"order": 2,
+		"disp": true,
+		"width": "10",
+		"collapse": false
+	},
+	{
+		"id": "6fc63314.2eb644",
+		"type": "ui_spacer",
+		"name": "spacer",
+		"group": "7fa34511.0a7d64",
+		"order": 5,
+		"width": 1,
+		"height": 1
+	},
+	{
+		"id": "586c4466.73cdcc",
+		"type": "mqtt-broker",
+		"broker": "iot.eclipse.org",
+		"port": "1883",
+		"clientid": "",
+		"usetls": false,
+		"compatmode": true,
+		"keepalive": "60",
+		"cleansession": true,
+		"birthTopic": "",
+		"birthQos": "0",
+		"birthPayload": "",
+		"willTopic": "",
+		"willQos": "0",
+		"willPayload": ""
+	},
+	{
+		"id": "2d416c0853ca7874",
+		"type": "Db2",
+		"hostname": "98538591-7217-4024-b027-8baa776ffad1.c3n41cmd0nqnrk39u98g.databases.appdomain.cloud",
+		"db": "bludb",
+		"port": "30875",
+		"name": "WistronDEV"
+	},
+	{
+		"id": "41f4a932d2761f95",
+		"type": "dashDB",
+		"hostname": "98538591-7217-4024-b027-8baa776ffad1.c3n41cmd0nqnrk39u98g.databases.appdomain.cloud",
+		"db": "bludb",
+		"port": "30875",
+		"name": ""
+	},
+	{
+		"id": "cace8d4faa3e2a5a",
+		"type": "cloudant",
+		"host": "https://84e0d6af-0dd8-4e30-ac19-fd5a003763e1-bluemix.cloudantnosqldb.appdomain.cloud",
+		"name": ""
+	},
+	{
+		"id": "bc5f55354be65df7",
+		"type": "Db2",
+		"hostname": "pre3a885-68cc-4659-91ad-33c8024994d5.cacg5drd06adbske2110.databases.appdomain.cloud",
+		"db": "bludb",
+		"port": "32485",
+		"name": ""
+	},
+	{
+		"id": "86984d4bcceaab12",
+		"type": "http in",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"url": "/seek",
+		"method": "post",
+		"upload": false,
+		"swaggerDoc": "",
+		"x": 570,
+		"y": 480,
+		"wires": [
+			[
+				"8bfdb497e17b9759",
+				"dc10718fcde7ba6a"
+			]
+		]
+	},
+	{
+		"id": "2eef531587adcbcd",
+		"type": "debug",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "discovery_response",
+		"targetType": "msg",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 1370,
+		"y": 360,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "4d6ecbc9f483aef6",
+		"type": "http response",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"statusCode": "",
+		"headers": {
+
+		},
+		"x": 1670,
+		"y": 780,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "65fdabc2a682e577",
+		"type": "watson-discovery-v2-project-manager",
+		"z": "c4bdbce101ee9d27",
+		"name": "Wistron WD",
+		"projectId": "8b9e36e9-0f96-40be-9927-954d1152619d",
+		"projectName": "",
+		"collectionName": "",
+		"description": "",
+		"language": "en",
+		"projectType": "document_retrieval",
+		"collectionId": "",
+		"queryId": "",
+		"discovery-method": "querySearch",
+		"service-endpoint": "https://api.us-south.discovery.watson.cloud.ibm.com/instances/1b1bbfd6-6a32-413c-be07-6b60c4c66bfb",
+		"x": 1150,
+		"y": 360,
+		"wires": [
+			[
+				"2eef531587adcbcd",
+				"9474bbea7ad93aa8"
+			]
+		],
+		"info": "troubleshooting-v6-final: \"6e0b2b4b-fe0e-1ea6-0000-01814c9584ed\"\ndissassembly video2text: \"6815b01c-5280-2807-0000-01811873a8f0\"\nBOM:\"538028ab-ffae-a314-0000-01811919bda1\"\n\n1en72fQngZcXovAY1FPe0S-atNL-9UMYTt8NDQkTQFYI"
+	},
+	{
+		"id": "8bfdb497e17b9759",
+		"type": "switch",
+		"z": "c4bdbce101ee9d27",
+		"name": "if chat is not null",
+		"property": "payload.data",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "nempty"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 1,
+		"x": 780,
+		"y": 460,
+		"wires": [
+			[
+				"64572f721be0eada"
+			]
+		]
+	},
+	{
+		"id": "c63fbfe571e08104",
+		"type": "function",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"func": "// msg.payload = msg.discovery_response;\n\n\nmsg.payload = {\n  \"arr\": [\n    {\n      \"title\": \"Here are the other three options.\",\n      \"options\": [],\n      \"description\": \"\",\n      \"response_type\": \"option\"\n    }\n  ]\n}\nvar optionlists = []\nfor(i=3;i<6;i++){\n    if(!optionlists.includes(msg.discovery_response.results[i].FAILURE_SYMPTOM)){\n        optionlists.push(msg.discovery_response.results[i].FAILURE_SYMPTOM)\n    }\n    else{\n        continue\n    }\n    option = {\n                    \"label\": msg.discovery_response.results[i].FAILURE_SYMPTOM.replace(/^[A-Z]\\./,'').trim(),\n                    \"value\": {\n                        \"input\": {\n                            \"text\":msg.discovery_response.results[i].FAILURE_SYMPTOM\n                        }\n                    }\n                }\n    msg.payload.arr[0].options.push(option);\n}\noption ={\n    \"label\": \"Contact Support Team\",\n    \"value\":\n    {\n        \"input\":{\n            \"text\":\"C:A01_FailureType_CallSupportTeam\" \n        }\n    }\n}\nmsg.payload.arr[0].options.push(option)\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 1340,
+		"y": 420,
+		"wires": [
+			[
+
+			]
+		]
+	},
+	{
+		"id": "0825ce2a7e987263",
+		"type": "debug",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "false",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 1630,
+		"y": 620,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "6b249714dcfef0da",
+		"type": "function",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"func": "\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 720,
+		"y": 360,
+		"wires": [
+			[
+
+			]
+		]
+	},
+	{
+		"id": "ed2f2612eb0e8a01",
+		"type": "http request",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"method": "POST",
+		"ret": "obj",
+		"paytoqs": "ignore",
+		"url": "http://162.133.133.172:8000/v1/chat/completions",
+		"tls": "",
+		"persist": true,
+		"proxy": "",
+		"insecureHTTPParser": false,
+		"authType": "bearer",
+		"senderr": false,
+		"x": 970,
+		"y": 760,
+		"wires": [
+			[
+				"56d36a6a42273e03",
+				"3e6dd652faa76a72"
+			]
+		]
+	},
+	{
+		"id": "56d36a6a42273e03",
+		"type": "debug",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "false",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 1170,
+		"y": 760,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "305c6bbcea0fabe4",
+		"type": "inject",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": false,
+		"onceDelay": 0.1,
+		"topic": "",
+		"payload": "{\"data\":\"Can you plan a trip to Japan?\"}",
+		"payloadType": "json",
+		"x": 550,
+		"y": 760,
+		"wires": [
+			[
+				"64572f721be0eada"
+			]
+		]
+	},
+	{
+		"id": "64572f721be0eada",
+		"type": "function",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"func": "data = msg.payload.data\nmemory = msg.payload.memory\nformat = {\n  \"output\": {\n    \"generic\":{\n        \"text\":\"<Here is plain text response>\",\n        \"option\":{\n        \"title\":\"<title of options>\",\n        \"options\": [\n          {\n            \"label\": \"<option 1 name>\",\n            \"value\": {\n              \"input\": {\n                \"text\": \"<the text which will sent back as input text to dialog> \"\n              }\n            }\n          },\n          {\n            \"label\": \"<option 2 name>\",\n            \"value\": {\n              \"input\": {\n                \"text\": \"<the text which will sent back as input text to dialog>\"\n              }\n            }\n          },\n          {\n            \"label\": \"<option 3 name>\",\n            \"value\": {\n              \"input\": {\n                \"text\": \"<the text which will sent back as input text to dialog>\"\n              }\n            }\n          }\n        ]\n            \n        }\n        \n   \n    }\n  }\n}\n\n\n\nmsg.payload = {\n    \"model\":\"gpt-3.5-turbo-0301\",\n    \"messages\":[\n        {\"role\":\"user\",\"content\":\"You are AGI-Demo, An ai designed to become a tour guide.\\\nYour decisions must always be made independently without seeking user assistance. Play to your strengths as an LLM and pursue simple strategies with no legal complications.\\\n\\\nDialog type:\\\n1. Option: Options for user to choose which action to do next, can be more than three options. Note that the text in the options will be sent back to dialog as a input, so this need more details./n\\\n2. Text: Detail explanation of the answer./n\\\n\\\nConstraints:\\\n1. ~4000 word limit for short term memory. Your short term memory is short, so immediately save important information to files.\\\n2. If you are unsure how you previously did something or want to recall past events, thinking about similar events will help you remember.\\\n3. No user assistance.\\\n4. Make sure option field is not empty and there is always an option \\\"End conversation\\\". \\\n\\\nPerformance Evaluation:\\\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\\\n2. Constructively self-criticize your big-picture behavior constantly.\\\n3. Reflect on past decisions and strategies to refine your approach.\\\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.\\\n\\\nYou should only respond in JSON format as described below \\\nResponse Format:\" + JSON.stringify(format) + \"/n\\\nEnsure the response can beparsed by Python json.loads \\\nThe current time and date is Fri Apr 28 01:48:03 2023 \\\nThis reminds you of these events from your past: \"+ JSON.stringify(memory)},\n{\"role\":\"user\",\"content\":\"Answer the question:\"+ data +\"/n \\\nDetermine which dialog to use, and respond using the format specified above (don't need to reply anything else other than JSON):\"}\n        ],\n        \"temperature\":0.7,\n        \"top_p\":1,\n        \"n\":1,\n        \"stream\":false,\n        \"max_tokens\":300,\n        \"presence_penalty\":0,\"frequency_penalty\":0}\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 980,
+		"y": 620,
+		"wires": [
+			[
+				"dc10718fcde7ba6a",
+				"6e9ddfb461da5980"
+			]
+		]
+	},
+	{
+		"id": "5f2ca2fc5e870038",
+		"type": "function",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"func": "\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 780,
+		"y": 900,
+		"wires": [
+			[
+
+			]
+		]
+	},
+	{
+		"id": "dc10718fcde7ba6a",
+		"type": "debug",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "payload",
+		"targetType": "msg",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 1110,
+		"y": 480,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "6e9ddfb461da5980",
+		"type": "http request",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"method": "POST",
+		"ret": "obj",
+		"paytoqs": "ignore",
+		"url": "https://api.openai.com/v1/chat/completions",
+		"tls": "",
+		"persist": true,
+		"proxy": "",
+		"insecureHTTPParser": false,
+		"authType": "bearer",
+		"senderr": false,
+		"x": 1210,
+		"y": 560,
+		"wires": [
+			[
+				"33b69784a69b2e0f",
+				"0825ce2a7e987263"
+			]
+		]
+	},
+	{
+		"id": "33b69784a69b2e0f",
+		"type": "function",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"func": "function fixJsonSyntaxError(jsonString) {\n  let fixedJsonString = jsonString;\n  \n  // Check if the string is already parsable\n  try {\n      console.log('here')\n    JSON.parse(jsonString);\n  } catch (error) {\n    // If not, attempt to fix the error\n    \n    if (error instanceof SyntaxError) {\n      const startIndex = error.message.indexOf('position') + 9;\n      const endIndex = error.message.length;\n      const errorPosition = parseInt(error.message.substring(startIndex, endIndex));\n      \n      fixedJsonString = jsonString.substring(0, errorPosition - 1) + jsonString.substring(errorPosition);\n      //msg.payload = {\"startIndex\":startIndex,\"errorPosition\":errorPosition}\n      // Attempt to parse the fixed string\n      try {\n        JSON.parse(fixedJsonString);\n      } catch (error) {\n        // If the fixed string is still not parsable, return the original string\n        fixedJsonString = jsonString;\n      }\n    }\n  }\n  \n  return fixedJsonString;\n}\n\n\nmsg.payload = JSON.parse(fixJsonSyntaxError(msg.payload.choices[0].message.content))\n// msg.payload = {\"output\":\n//     {\"generic\":{\n//         \"text\":\"Sure, I can help you plan your trip to America. Which city or state are you interested in visiting?\",\n//         \"option\":{\n//         \"title\":\"Popular destinations in America\",\n//         \"options\":[\n//             {\n//                 \"label\":\"New York City\",\"value\":{\n//                 \"input\":{\n//                     \"text\":\"I want to visit New York City\"}}},\n//             {\n//                 \"label\":\"Los Angeles\",\n//                 \"value\":{\n//                     \"input\":{\n//                         \"text\":\"I want to visit Los Angeles\"}}},\n//             {\n//                 \"label\":\"Miami\",\n//                 \"value\":{\n//                     \"input\":{\n//                         \"text\":\"I want to visit Miami\"}}\n                \n//             }\n//             ]\n            \n//         }\n        \n   \n//     },\n//      \"answered\":true\n// }}\n\n\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 1380,
+		"y": 700,
+		"wires": [
+			[
+				"4d6ecbc9f483aef6",
+				"0825ce2a7e987263"
+			]
+		]
+	},
+	{
+		"id": "3e6dd652faa76a72",
+		"type": "http response",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"statusCode": "",
+		"headers": {
+
+		},
+		"x": 1125,
+		"y": 860,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "fe1fa819e8de304c",
+		"type": "inject",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": false,
+		"onceDelay": 0.1,
+		"topic": "",
+		"payload": "{\"output\":{\"generic\":{\"text\":\"The best time to visit Japan is during spring (March to May) or autumn (September to November) when the weather is mild and the scenery is beautiful.\",\"option\":{}}}}}",
+		"payloadType": "str",
+		"x": 450,
+		"y": 1000,
+		"wires": [
+			[
+				"a09edf72d1540378"
+			]
+		]
+	},
+	{
+		"id": "a09edf72d1540378",
+		"type": "function",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"func": "function fixJsonSyntaxError(jsonString) {\n  let fixedJsonString = jsonString;\n  \n  // Check if the string is already parsable\n  try {\n      console.log('here')\n    JSON.parse(jsonString);\n  } catch (error) {\n    // If not, attempt to fix the error\n    \n    if (error instanceof SyntaxError) {\n      const startIndex = error.message.indexOf('position') + 9;\n      const endIndex = error.message.length;\n      const errorPosition = parseInt(error.message.substring(startIndex, endIndex));\n      \n      fixedJsonString = jsonString.substring(0, errorPosition - 1) + jsonString.substring(errorPosition);\n      //msg.payload = {\"startIndex\":startIndex,\"errorPosition\":errorPosition}\n      // Attempt to parse the fixed string\n      try {\n        JSON.parse(fixedJsonString);\n      } catch (error) {\n        // If the fixed string is still not parsable, return the original string\n        fixedJsonString = jsonString;\n      }\n    }\n  }\n  \n  return fixedJsonString;\n}\nmsg.payload = JSON.parse(fixJsonSyntaxError(msg.payload))\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 660,
+		"y": 980,
+		"wires": [
+			[
+				"95989ee2cf3052ea"
+			]
+		]
+	},
+	{
+		"id": "95989ee2cf3052ea",
+		"type": "debug",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "payload",
+		"targetType": "msg",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 810,
+		"y": 1060,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "72915cf46a95e15a",
+		"type": "inject",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": false,
+		"onceDelay": 0.1,
+		"topic": "",
+		"payload": "test",
+		"payloadType": "str",
+		"x": 950,
+		"y": 340,
+		"wires": [
+			[
+				"65fdabc2a682e577"
+			]
+		]
+	},
+	{
+		"id": "688fef50224795d6",
+		"type": "http in",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"url": "/v2/projects/8b9e36e9-0f96-40be-9927-954d1152619d/query",
+		"method": "post",
+		"upload": false,
+		"swaggerDoc": "",
+		"x": 1080,
+		"y": 140,
+		"wires": [
+			[
+				"90a478b6b22719b5",
+				"e4ef5cc70735bb81"
+			]
+		]
+	},
+	{
+		"id": "9474bbea7ad93aa8",
+		"type": "function",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"func": "msg.payload = msg.discovery_response\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 1320,
+		"y": 300,
+		"wires": [
+			[
+				"b1aa0335b82f89d0"
+			]
+		]
+	},
+	{
+		"id": "b1aa0335b82f89d0",
+		"type": "http response",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"statusCode": "",
+		"headers": {
+
+		},
+		"x": 1590,
+		"y": 300,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "90a478b6b22719b5",
+		"type": "debug",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "false",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 1370,
+		"y": 240,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "e4ef5cc70735bb81",
+		"type": "function",
+		"z": "c4bdbce101ee9d27",
+		"name": "",
+		"func": "if(msg.payload.query){\nmsg.payload = msg.payload.query\n}\nelse{\nmsg.payload = msg.payload.natural_language_query\n    \n}\nif(msg.payload==\"\"){\n    msg.payload=\"test\"\n}\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 1100,
+		"y": 300,
+		"wires": [
+			[
+				"65fdabc2a682e577"
+			]
+		]
+	},
+	{
+		"id": "c8b46007c422eb07",
+		"type": "debug",
+		"z": "47e9b769.f10e68",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "discovery_response",
+		"targetType": "msg",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 970,
+		"y": 320,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "7918311e6ef564fb",
+		"type": "http in",
+		"z": "47e9b769.f10e68",
+		"name": "",
+		"url": "/result",
+		"method": "post",
+		"upload": false,
+		"swaggerDoc": "",
+		"x": 70,
+		"y": 320,
+		"wires": [
+			[
+				"1b4b7f075ed39410",
+				"73cb26df45f7858e",
+				"120b5c1078c05528"
+			]
+		]
+	},
+	{
+		"id": "0818503ad7b7c16f",
+		"type": "http response",
+		"z": "47e9b769.f10e68",
+		"name": "",
+		"statusCode": "",
+		"headers": {
+
+		},
+		"x": 1070,
+		"y": 420,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "3f184c366a58b715",
+		"type": "function",
+		"z": "47e9b769.f10e68",
+		"name": "",
+		"func": "msg.payload = msg.payload.data;\nmsg.discoveryparams = {\n    \"collectionIds\":[\"6000bea8-29af-990e-0000-0180bd3f4605\"],\n    \"count\":3\n    \n};\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 470,
+		"y": 320,
+		"wires": [
+			[
+				"1beef8389817bcdb"
+			]
+		]
+	},
+	{
+		"id": "1beef8389817bcdb",
+		"type": "watson-discovery-v2-project-manager",
+		"z": "47e9b769.f10e68",
+		"name": "Wistron WD",
+		"projectId": "ac32c559-aaa3-4792-91cf-02b5d801d92a",
+		"projectName": "",
+		"collectionName": "",
+		"description": "",
+		"language": "en",
+		"projectType": "document_retrieval",
+		"collectionId": "",
+		"queryId": "",
+		"discovery-method": "querySearch",
+		"service-endpoint": "https://api.us-south.discovery.watson.cloud.ibm.com/instances/2c05e41f-365b-4c6a-8acd-16ebeafc9200",
+		"x": 650,
+		"y": 320,
+		"wires": [
+			[
+				"c8b46007c422eb07",
+				"148e0ed1504dc6d0"
+			]
+		],
+		"info": "troubleshooting-v6-final: \"6000bea8-29af-990e-0000-0180bd3f4605\"\ndissassembly video2text: \"6815b01c-5280-2807-0000-01811873a8f0\"\nBOM:\"538028ab-ffae-a314-0000-01811919bda1\"\n"
+	},
+	{
+		"id": "1b4b7f075ed39410",
+		"type": "switch",
+		"z": "47e9b769.f10e68",
+		"name": "if type is text",
+		"property": "payload.type",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "text",
+				"vt": "str"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 1,
+		"x": 270,
+		"y": 320,
+		"wires": [
+			[
+				"3f184c366a58b715"
+			]
+		]
+	},
+	{
+		"id": "148e0ed1504dc6d0",
+		"type": "function",
+		"z": "47e9b769.f10e68",
+		"name": "",
+		"func": "// msg.payload = msg.discovery_response;\n\n\nmsg.payload = {\n  \"arr\": [\n    {\n      \"title\": \"What kind of the failure symptom have you encountered?\",\n      \"options\": [],\n      \"description\": \"\",\n      \"response_type\": \"option\"\n    }\n  ]\n}\nvar optionlists = []\nfor(i=0;i<3;i++){\n    if(!optionlists.includes(msg.discovery_response.results[i].FAILURE_SYMPTOM)){\n        optionlists.push(msg.discovery_response.results[i].FAILURE_SYMPTOM)\n    }\n    else{\n        continue\n    }\n    option = {\n                    \"label\": msg.discovery_response.results[i].FAILURE_SYMPTOM,\n                    \"value\": {\n                        \"input\": {\n                            \"text\":msg.discovery_response.results[i].FAILURE_TYPE\n                        }\n                    }\n                }\n    msg.payload.arr[0].options.push(option);\n}\n\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 830,
+		"y": 420,
+		"wires": [
+			[
+				"0818503ad7b7c16f"
+			]
+		]
+	},
+	{
+		"id": "9c72cdad594678a7",
+		"type": "inject",
+		"z": "47e9b769.f10e68",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": false,
+		"onceDelay": 0.1,
+		"topic": "",
+		"payload": "",
+		"payloadType": "date",
+		"x": 70,
+		"y": 860,
+		"wires": [
+			[
+
+			]
+		]
+	},
+	{
+		"id": "31c7556882683f2c",
+		"type": "Db2 in",
+		"z": "47e9b769.f10e68",
+		"Db2": "2d416c0853ca7874",
+		"service": "_ext_",
+		"query": "SELECT DOCID FROM DVD39997.DOC_MAPPING WHERE DOCNAME='TroubleshootingV6-final-1.csv' AND COLLECTION_NAME='troubleshooting-v6-final';",
+		"params": "",
+		"name": "",
+		"x": 260,
+		"y": 880,
+		"wires": [
+			[
+
+			]
+		]
+	},
+	{
+		"id": "5f5ced85fae7f457",
+		"type": "debug",
+		"z": "47e9b769.f10e68",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "payload",
+		"targetType": "msg",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 500,
+		"y": 900,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "73cb26df45f7858e",
+		"type": "switch",
+		"z": "47e9b769.f10e68",
+		"name": "if type is video",
+		"property": "payload.type",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "video",
+				"vt": "str"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 1,
+		"x": 300,
+		"y": 440,
+		"wires": [
+			[
+				"18059f3fb39e04d8"
+			]
+		]
+	},
+	{
+		"id": "7dcea03b8a23fb04",
+		"type": "debug",
+		"z": "47e9b769.f10e68",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "discovery_response",
+		"targetType": "msg",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 970,
+		"y": 540,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "ac492a6f5dc5d809",
+		"type": "http response",
+		"z": "47e9b769.f10e68",
+		"name": "",
+		"statusCode": "",
+		"headers": {
+
+		},
+		"x": 1070,
+		"y": 640,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "18059f3fb39e04d8",
+		"type": "function",
+		"z": "47e9b769.f10e68",
+		"name": "",
+		"func": "msg.payload = msg.payload.data;\nmsg.discoveryparams = {\n    \"collectionIds\":[\"6815b01c-5280-2807-0000-01811873a8f0\"],\n    \"count\":3\n    \n};\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 470,
+		"y": 540,
+		"wires": [
+			[
+				"5941c21491147d54"
+			]
+		]
+	},
+	{
+		"id": "5941c21491147d54",
+		"type": "watson-discovery-v2-project-manager",
+		"z": "47e9b769.f10e68",
+		"name": "Wistron WD",
+		"projectId": "ac32c559-aaa3-4792-91cf-02b5d801d92a",
+		"projectName": "",
+		"collectionName": "",
+		"description": "",
+		"language": "en",
+		"projectType": "document_retrieval",
+		"collectionId": "",
+		"queryId": "",
+		"discovery-method": "querySearch",
+		"service-endpoint": "https://api.us-south.discovery.watson.cloud.ibm.com/instances/2c05e41f-365b-4c6a-8acd-16ebeafc9200",
+		"x": 670,
+		"y": 560,
+		"wires": [
+			[
+				"7dcea03b8a23fb04",
+				"533854a95162debc"
+			]
+		],
+		"info": "troubleshooting-v6-final: \"6000bea8-29af-990e-0000-0180bd3f4605\"\ndissassembly video2text: \"6815b01c-5280-2807-0000-01811873a8f0\"\nBOM:\"538028ab-ffae-a314-0000-01811919bda1\"\n"
+	},
+	{
+		"id": "533854a95162debc",
+		"type": "function",
+		"z": "47e9b769.f10e68",
+		"name": "",
+		"func": "// msg.payload = msg.discovery_response;\n\n\nmsg.payload = {\n  \"arr\": []\n}\nvar optionlists = []\nvar cnt = 0;\nfor(i=0; i< msg.discovery_response.results.length; i++){\n    if(cnt >3){\n        break\n    }\n    if(!optionlists.includes(msg.discovery_response.results[i].YouTube)){\n        optionlists.push(msg.discovery_response.results[i].YouTube)\n    }\n    else{\n        continue\n    }\n    //node.log(result.extracted_metadata.filename);\n    option = {\n        \"title\": msg.discovery_response.results[i].extracted_metadata.filename.split(\"_\")[0],\n        \"source\": msg.discovery_response.results[i].YouTube,\n        \"response_type\": \"video\",\n        \"channel_options\": {\n          \"chat\": {\n            \"dimensions\": {}\n          }\n        }\n      }\n    msg.payload.arr.push(option);\n    cnt++;\n}\n\nreturn msg;\n",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 850,
+		"y": 640,
+		"wires": [
+			[
+				"ac492a6f5dc5d809"
+			]
+		]
+	},
+	{
+		"id": "120b5c1078c05528",
+		"type": "switch",
+		"z": "47e9b769.f10e68",
+		"name": "if type is bom",
+		"property": "payload.type",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "bom",
+				"vt": "str"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 1,
+		"x": 240,
+		"y": 580,
+		"wires": [
+			[
+				"e6172263c67b8b7e"
+			]
+		]
+	},
+	{
+		"id": "9a750a9cae62766f",
+		"type": "watson-discovery-v2-project-manager",
+		"z": "47e9b769.f10e68",
+		"name": "Wistron WD",
+		"projectId": "ac32c559-aaa3-4792-91cf-02b5d801d92a",
+		"projectName": "",
+		"collectionName": "",
+		"description": "",
+		"language": "en",
+		"projectType": "document_retrieval",
+		"collectionId": "",
+		"queryId": "",
+		"discovery-method": "querySearch",
+		"service-endpoint": "https://api.us-south.discovery.watson.cloud.ibm.com/instances/2c05e41f-365b-4c6a-8acd-16ebeafc9200",
+		"x": 550,
+		"y": 680,
+		"wires": [
+			[
+				"39e1ea6a2057ae7b",
+				"b550f27b6ee2778b"
+			]
+		]
+	},
+	{
+		"id": "e6172263c67b8b7e",
+		"type": "function",
+		"z": "47e9b769.f10e68",
+		"name": "",
+		"func": "msg.payload = msg.payload.data;\nmsg.discoveryparams = {\n    \"collectionIds\":[\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n    \"filter\":\"extracted_metadata.filename:ANTMAN-14-2021.csv\"\n};\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 360,
+		"y": 680,
+		"wires": [
+			[
+				"9a750a9cae62766f"
+			]
+		]
+	},
+	{
+		"id": "39e1ea6a2057ae7b",
+		"type": "debug",
+		"z": "47e9b769.f10e68",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "discovery_response",
+		"targetType": "msg",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 910,
+		"y": 720,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "b550f27b6ee2778b",
+		"type": "function",
+		"z": "47e9b769.f10e68",
+		"name": "",
+		"func": "msg.payload = msg.discovery_response;\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 620,
+		"y": 800,
+		"wires": [
+			[
+				"fd3c72a045c72aee"
+			]
+		]
+	},
+	{
+		"id": "fd3c72a045c72aee",
+		"type": "http response",
+		"z": "47e9b769.f10e68",
+		"name": "",
+		"statusCode": "",
+		"headers": {
+
+		},
+		"x": 850,
+		"y": 820,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "2fcf5f21c7b8ace6",
+		"type": "watson-assistant-v2",
+		"z": "47e9b769.f10e68",
+		"name": "",
+		"service-endpoint": "https://api.jp-tok.assistant.watson.cloud.ibm.com/instances/f95af6c6-6c1d-44ef-9c5f-1a07c3f95d89",
+		"assistant_id": "8796b19c-ea0c-4b3c-a83d-059234f45b58",
+		"debug": false,
+		"restart": false,
+		"return_context": true,
+		"alternate_intents": false,
+		"multisession": true,
+		"timeout": "",
+		"optout-learning": false,
+		"persist-session-id": true,
+		"x": 590,
+		"y": 1200,
+		"wires": [
+			[
+
+			]
+		],
+		"info": "aI6e4zxXe70cKQ2y7hob_DLBM8ZEHI_kSWHywEh6B00R"
+	},
+	{
+		"id": "8f143488b213c487",
+		"type": "debug",
+		"z": "bbf0a28b56acf59d",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "discovery_response",
+		"targetType": "msg",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 1010,
+		"y": 200,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "0d96e7a20cdb775c",
+		"type": "http response",
+		"z": "bbf0a28b56acf59d",
+		"name": "",
+		"statusCode": "",
+		"headers": {
+
+		},
+		"x": 1270,
+		"y": 420,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "6562958d2c7213b8",
+		"type": "watson-discovery-v2-project-manager",
+		"z": "bbf0a28b56acf59d",
+		"name": "Wistron WD",
+		"projectId": "ac32c559-aaa3-4792-91cf-02b5d801d92a",
+		"projectName": "",
+		"collectionName": "",
+		"description": "",
+		"language": "en",
+		"projectType": "document_retrieval",
+		"collectionId": "",
+		"queryId": "",
+		"discovery-method": "querySearch",
+		"service-endpoint": "https://api.us-south.discovery.watson.cloud.ibm.com/instances/2c05e41f-365b-4c6a-8acd-16ebeafc9200",
+		"x": 730,
+		"y": 160,
+		"wires": [
+			[
+				"6f2345c300de7da3",
+				"8f143488b213c487"
+			]
+		]
+	},
+	{
+		"id": "ef9fee8379910d51",
+		"type": "switch",
+		"z": "bbf0a28b56acf59d",
+		"name": "check type",
+		"property": "payload.type",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "bom",
+				"vt": "str"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 1,
+		"x": 250,
+		"y": 40,
+		"wires": [
+			[
+				"6f5f520b6e67b138"
+			]
+		]
+	},
+	{
+		"id": "91007bf2a9380dfc",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "WA 現在跑的 function",
+		"func": "//msg.payload = msg.discovery_response;\n//return msg;\n\nnbr = msg.discovery_response.matching_results\n\nif (nbr > 5){\n    nbr = 5\n} else {\n    nbr\n}\n\nmsg.payload = {\n    \"arr\": [\n      {\n        \"title\": \"Part_Number?\",\n        \"textLists\": [],\n        \"description\": \"\",\n        \"response_type\": \"text\"\n      }\n    ]\n  }\n\n  for(i=0;i<nbr;i++){\n    textList = {\n                      \"label\": msg.discovery_response.results[i].Commodity,\n                      \"value\": {\n                          \"input\": {\n                              \"text\":msg.discovery_response.results[i].Part_Number\n                          }\n                      }\n                  }\n      msg.payload.arr[0].textLists.push(textList);\n  }\n  \n  return msg;\n  ",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 880,
+		"y": 460,
+		"wires": [
+			[
+
+			]
+		]
+	},
+	{
+		"id": "6f5f520b6e67b138",
+		"type": "switch",
+		"z": "bbf0a28b56acf59d",
+		"name": "if ANTMAN 16 version",
+		"property": "payload.version",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "ANTMAN 16",
+				"vt": "str"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 1,
+		"x": 240,
+		"y": 120,
+		"wires": [
+			[
+				"6aa93d2fd2e2d93c"
+			]
+		]
+	},
+	{
+		"id": "fad42bfe0579c289",
+		"type": "switch",
+		"z": "bbf0a28b56acf59d",
+		"name": "if ANTMAN 14 version",
+		"property": "payload.version",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "ANTMAN 14",
+				"vt": "str"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 1,
+		"x": 280,
+		"y": 700,
+		"wires": [
+			[
+				"36d15e4d97baa045"
+			]
+		]
+	},
+	{
+		"id": "36d15e4d97baa045",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "",
+		"func": "msg.payload = msg.payload.data;\nmsg.discoveryparams = {\n    \"collectionIds\":[\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n    \"filter\":\"extracted_metadata.filename:ANTMAN-14-2021.csv\"\n};\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 520,
+		"y": 700,
+		"wires": [
+			[
+				"6562958d2c7213b8"
+			]
+		]
+	},
+	{
+		"id": "9f5d9e710d6dce14",
+		"type": "http in",
+		"z": "bbf0a28b56acf59d",
+		"name": "",
+		"url": "/test",
+		"method": "post",
+		"upload": false,
+		"swaggerDoc": "",
+		"x": 120,
+		"y": 1220,
+		"wires": [
+			[
+				"979e011224aea5ac",
+				"a700e514cb39fb9f",
+				"357542bf6d025784"
+			]
+		]
+	},
+	{
+		"id": "19eca54ac64dd317",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "",
+		"func": "msg.payload = msg.discovery_response;\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 860,
+		"y": 40,
+		"wires": [
+			[
+
+			]
+		]
+	},
+	{
+		"id": "6f2345c300de7da3",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "測試版 跑成功",
+		"func": "var results = msg.discovery_response.matching_results;\n\nmsg.payload = {\n    \"arr\": [{\n        \"response_type\": \"text\",\n        \"text\": \"The possible part number(s) could be as follows: \\n\\n\"\n        }],\"pn_exist\": \"Y\"\n    };\n\nif (results > 0){\n    var partNo;\n    var funDesc;\n    \n    for (i=0;i<results;i++){\n        partNo = msg.discovery_response.results[i].Part_Number;\n        funDesc = msg.discovery_response.results[i].Functional_Description\n        partNoList = {\n            \"response_type\": \"text\",\n            \"text\": \"PartNo : \" + partNo + \"\\n\" + \"Functional Desc : \\n\"+funDesc + \" \\n\\n\"\n            }\n        msg.payload.arr.push(partNoList)\n    }\n\n} else {\n    msg.payload = {\n    \"arr\": [{\n        \"response_type\": \"text\",\n        \"text\": \"Sorry, Please verify filter criteria again.\"\n        }],\"pn_exist\": \"N\"\n    };\n}\n\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 980,
+		"y": 320,
+		"wires": [
+			[
+				"0d96e7a20cdb775c",
+				"2fe9b29723190e45"
+			]
+		]
+	},
+	{
+		"id": "2fe9b29723190e45",
+		"type": "debug",
+		"z": "bbf0a28b56acf59d",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "discovery_response",
+		"targetType": "msg",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 1270,
+		"y": 280,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "ce207a4b51a63596",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "WA 現在跑的 function trim (完成)",
+		"func": "nbr = msg.discovery_response.matching_results\n\nif (nbr > 5){\n    nbr = 5\n} else {\n    nbr\n}\n\nmsg.payload = {\n    \"arr\": []\n  }\n\n  for(i=0;i<nbr;i++){\n    textList = {\n        Part_Number:msg.discovery_response.results[i].Part_Number,\n        Functional_Description:msg.discovery_response.results[i].Functional_Description}\n      msg.payload.arr.push(textList);\n  }\n  \n  return msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 830,
+		"y": 400,
+		"wires": [
+			[
+
+			]
+		]
+	},
+	{
+		"id": "11261f8fa60c850a",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "LCD",
+		"func": "var payload_commodity = msg.payload.data;\n\nmsg.payload = payload_commodity;\n\nmsg.discoveryparams =  {\n  \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n  \"filter\":\"extracted_metadata.filename:ANTMAN-16-2021.csv, Commodity: LCD\"\n      \n    \n};\n\nreturn msg;\n\n\n/*\nBody Example:\n{\n  \"type\": \"bom\",\n  \"version\": \"ANTMAN 16\",\n  \"data\": \"LCD\",\n  \"filter\": {\n    \"Part_Description\": \"ASSY\",\n    \"Functional_Description\": \"Silver,FHD+\"\n  }\n}\n\n*/",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 450,
+		"y": 80,
+		"wires": [
+			[
+				"6562958d2c7213b8"
+			]
+		]
+	},
+	{
+		"id": "6900329c6e5b2dd2",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "MOTHERBOARD",
+		"func": "var payload_commodity = msg.payload.data;\nvar payload_filter= msg.payload.core;\n\nmsg.payload = payload_commodity;\n\nmsg.discoveryparams =  {\n  \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n  \"filter\":\"extracted_metadata.filename:ANTMAN-16-2021.csv\".concat(\n      ',',JSON.stringify(payload_filter).replace(/\"/g,'').slice(1,-1))\n      \n    \n};\n\nreturn msg;\n\n\n/*\nBody Example:\n{\n  \"type\": \"bom\",\n  \"version\": \"ANTMAN 16\",\n  \"data\": \"LCD\",\n  \"filter\": {\n    \"Part_Description\": \"ASSY\",\n    \"Functional_Description\": \"Silver,FHD+\"\n  }\n}\n\n*/",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 410,
+		"y": 380,
+		"wires": [
+			[
+
+			]
+		]
+	},
+	{
+		"id": "a30e8bc43352bb5d",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "之前發佈版本 (WA)",
+		"func": "var payload_commodity = msg.payload.data;\nvar payload_filter= msg.payload.filter;\n\nmsg.payload = payload_commodity;\n\nmsg.discoveryparams =  {\n  \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n  \"filter\":\"extracted_metadata.filename:ANTMAN-16-2021.csv\".concat(\n      ',',JSON.stringify(payload_filter).replace(/\"/g,'').slice(1,-1))\n      \n    \n};\n\nreturn msg;\n\n\n/*\nBody Example:\n{\n  \"type\": \"bom\",\n  \"version\": \"ANTMAN 16\",\n  \"data\": \"LCD\",\n  \"filter\": {\n    \"Part_Description\": \"ASSY\",\n    \"Functional_Description\": \"Silver,FHD+\"\n  }\n}\n\n*/",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 690,
+		"y": 40,
+		"wires": [
+			[
+
+			]
+		]
+	},
+	{
+		"id": "2aa774b8c40679b0",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "開發測試 第二版",
+		"func": "var payload_commodity = msg.payload.data;\nvar payload_filter1= msg.payload.filter.Part_Description;\nvar payload_filter2= msg.payload.filter.Functional_Description;\n\nmsg.payload = payload_commodity;\n\nmsg.discoveryparams =  {\n  \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n  \"filter\":\"extracted_metadata.filename:ANTMAN-16-2021.csv\".concat(\n      ',','Part_Description:',JSON.stringify(payload_filter1).replace(/\"/g,''),\n      ',','Functional_Description:',JSON.stringify(payload_filter2).replace(/\"/g,''))\n    \n};\n\nreturn msg;\n",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 500,
+		"y": 480,
+		"wires": [
+			[
+				"6562958d2c7213b8",
+				"eda3bce5553a0998"
+			]
+		]
+	},
+	{
+		"id": "eda3bce5553a0998",
+		"type": "debug",
+		"z": "bbf0a28b56acf59d",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "true",
+		"targetType": "full",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 550,
+		"y": 340,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "ac9c9e136fc9dd90",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "MOTHERBOARD",
+		"func": "var payload_commodity = msg.payload.data;\nvar payload_filter_core= msg.payload.core;\nvar payload_filter_graphic= msg.payload.graphic;\n\nmsg.payload = payload_commodity;\n\nmsg.discoveryparams =  {\n  \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n  \"filter\":\"extracted_metadata.filename:ANTMAN-16-2021.csv\".concat(\n      ',',\"Part_Description:\",payload_filter_core,\n      ',',\"Functional_Description:\",payload_filter_graphic)\n      \n    \n};\n\nreturn msg;\n\n\n/*\nvar payload_commodity = msg.payload.data;\nvar payload_filter1= msg.payload.filter.Part_Description;\nvar payload_filter2= msg.payload.filter.Functional_Description;\n\nmsg.payload = payload_commodity;\n\nmsg.discoveryparams =  {\n  \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n  \"filter\":\"extracted_metadata.filename:ANTMAN-16-2021.csv\".concat(\n      ',','Part_Description:',JSON.stringify(payload_filter1).replace(/\"/g,''),\n      ',','Functional_Description:',JSON.stringify(payload_filter2).replace(/\"/g,''))\n    \n};\n\nreturn msg;\n\n*/",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 470,
+		"y": 140,
+		"wires": [
+			[
+				"6562958d2c7213b8"
+			]
+		]
+	},
+	{
+		"id": "425a2b165bc1f49c",
+		"type": "debug",
+		"z": "bbf0a28b56acf59d",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "true",
+		"targetType": "full",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 450,
+		"y": 420,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "6aa93d2fd2e2d93c",
+		"type": "switch",
+		"z": "bbf0a28b56acf59d",
+		"name": "check commodity",
+		"property": "payload.data",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "LCD",
+				"vt": "str"
+			},
+			{
+				"t": "neq",
+				"v": "LCD",
+				"vt": "str"
+			}
+		],
+		"checkall": "false",
+		"repair": false,
+		"outputs": 2,
+		"x": 230,
+		"y": 240,
+		"wires": [
+			[
+				"11261f8fa60c850a"
+			],
+			[
+				"3e72079677a47796"
+			]
+		]
+	},
+	{
+		"id": "3e72079677a47796",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "function",
+		"func": "var payload_commodity = msg.payload.data;\nvar payload_filter= msg.payload.filter;\n\nmsg.payload = payload_commodity;\n\nmsg.discoveryparams =  {\n  \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n  \"filter\":\"extracted_metadata.filename:ANTMAN-16-2021.csv\".concat(\n      ',',JSON.stringify(payload_filter).replace(/\"/g,'').slice(1,-1))\n      \n    \n};\n\nreturn msg;\n\n\n/*\nBody Example:\n{\n  \"type\": \"bom\",\n  \"version\": \"ANTMAN 16\",\n  \"data\": \"LCD\",\n  \"filter\": {\n    \"Part_Description\": \"ASSY\",\n    \"Functional_Description\": \"Silver,FHD+\"\n  }\n}\n\n*/",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 400,
+		"y": 300,
+		"wires": [
+			[
+				"6562958d2c7213b8"
+			]
+		]
+	},
+	{
+		"id": "979e011224aea5ac",
+		"type": "switch",
+		"z": "bbf0a28b56acf59d",
+		"name": "if type is bom",
+		"property": "payload.type",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "bom",
+				"vt": "str"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 1,
+		"x": 120,
+		"y": 1440,
+		"wires": [
+			[
+				"588d05a58bd5fe68",
+				"1d96f4edfbd3c33a"
+			]
+		]
+	},
+	{
+		"id": "1d96f4edfbd3c33a",
+		"type": "switch",
+		"z": "bbf0a28b56acf59d",
+		"name": "if ANTMAN14",
+		"property": "payload.version",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "ANTMAN 14",
+				"vt": "str"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 1,
+		"x": 240,
+		"y": 1740,
+		"wires": [
+			[
+				"fd376f2f8fcdea1a"
+			]
+		]
+	},
+	{
+		"id": "588d05a58bd5fe68",
+		"type": "switch",
+		"z": "bbf0a28b56acf59d",
+		"name": "if ANTMAN16",
+		"property": "payload.version",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "ANTMAN 16",
+				"vt": "str"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 1,
+		"x": 260,
+		"y": 1660,
+		"wires": [
+			[
+				"06089515c71d270b"
+			]
+		]
+	},
+	{
+		"id": "2475c75dd7a5a6a4",
+		"type": "watson-discovery-v2-project-manager",
+		"z": "bbf0a28b56acf59d",
+		"name": "Wistron WD",
+		"projectId": "ac32c559-aaa3-4792-91cf-02b5d801d92a",
+		"projectName": "",
+		"collectionName": "",
+		"description": "",
+		"language": "en",
+		"projectType": "document_retrieval",
+		"collectionId": "",
+		"queryId": "",
+		"discovery-method": "querySearch",
+		"service-endpoint": "https://api.us-south.discovery.watson.cloud.ibm.com/instances/2c05e41f-365b-4c6a-8acd-16ebeafc9200",
+		"x": 890,
+		"y": 1700,
+		"wires": [
+			[
+				"d1ac9d7031738dc9",
+				"62f1bea0efa5a811"
+			]
+		]
+	},
+	{
+		"id": "d1ac9d7031738dc9",
+		"type": "debug",
+		"z": "bbf0a28b56acf59d",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "discovery_response",
+		"targetType": "msg",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 1210,
+		"y": 1640,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "6c6bebd885eada18",
+		"type": "http response",
+		"z": "bbf0a28b56acf59d",
+		"name": "",
+		"statusCode": "",
+		"headers": {
+
+		},
+		"x": 1330,
+		"y": 1760,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "62f1bea0efa5a811",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "",
+		"func": "var results = msg.discovery_response.matching_results;\n\nmsg.payload = {\n    \"arr\": [{\n        \"response_type\": \"text\",\n        \"text\": \"The possible part number(s) could be as follows: \\n\\n\"\n        }],\"pn_exist\": \"Y\",\"whr\":\"null\",\"cell\":\"null\",\"core\":\"null\",\n        \"color\":\"null\",\"country\":\"null\",\"graphic\":\"null\",\"version\":\"null\",\n        \"commodity\":\"null\"\n    };\n\nif (results > 0){\n    var partNo;\n    var funDesc;\n    \n    for (i=0;i<results;i++){\n        partNo = msg.discovery_response.results[i].Part_Number;\n        funDesc = msg.discovery_response.results[i].Functional_Description\n        partNoList = {\n            \"response_type\": \"text\",\n            \"text\": \"PartNo : \" + partNo + \"\\n\" + \"Functional Desc : \\n\"+funDesc + \" \\n\\n\"\n            }\n        msg.payload.arr.push(partNoList)\n    }\n\n} else {\n    msg.payload = {\n    \"arr\": [{\n        \"response_type\": \"text\",\n        \"text\": \"Sorry, Please verify filter criteria again.\"\n        }],\"pn_exist\": \"N\",\"whr\":\"null\",\"cell\":\"null\",\"core\":\"null\",\n        \"color\":\"null\",\"country\":\"null\",\"graphic\":\"null\",\"version\":\"null\",\n        \"commodity\":\"null\"\n    };\n}\n\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 1140,
+		"y": 1800,
+		"wires": [
+			[
+				"6c6bebd885eada18"
+			]
+		]
+	},
+	{
+		"id": "2fab59e6fb9cd4e7",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "Motherboard",
+		"func": "var payload_filter_core= msg.payload.core;\nvar payload_filter_graphic= msg.payload.graphic;\n\nmsg.payload = msg.payload.commodity;\n\nmsg.discoveryparams =  {\n  \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n  \"filter\":\"extracted_metadata.filename:ANTMAN-16-2021.csv\".concat(\n      ',',\"Part_Description:\",payload_filter_core,\n      ',',\"Functional_Description:\",payload_filter_graphic)\n      \n    \n};\n\nreturn msg;\n\n",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 650,
+		"y": 1600,
+		"wires": [
+			[
+				"2475c75dd7a5a6a4"
+			]
+		]
+	},
+	{
+		"id": "f8d5d7db2457106f",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "LCD",
+		"func": "msg.payload = msg.payload.commodity;\n\nmsg.discoveryparams =  {\n  \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n  \"filter\":\"extracted_metadata.filename:ANTMAN-16-2021.csv, Commodity: LCD\"\n      \n    \n};\n\nreturn msg;\n",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 650,
+		"y": 1560,
+		"wires": [
+			[
+				"2475c75dd7a5a6a4"
+			]
+		]
+	},
+	{
+		"id": "8053d2546e0ad8b0",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "Battery",
+		"func": "var payload_filter_cell= msg.payload.cell;\nvar payload_filter_whr= msg.payload.whr;\n\nmsg.payload = msg.payload.commodity;\n\nif (payload_filter_cell == '1 Cell'){\n  msg.discoveryparams =  {\n  \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n  \"filter\":\"extracted_metadata.filename:ANTMAN-16-2021.csv\".concat(\n      ',',\"Functional_Description:\",payload_filter_cell.slice(0,1))\n  };\n} else{\nmsg.discoveryparams =  {\n  \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n  \"filter\":\"extracted_metadata.filename:ANTMAN-16-2021.csv\".concat(\n      ',',\"Functional_Description:\",payload_filter_cell.slice(0,1),',',payload_filter_whr)\n    };\n}\nreturn msg;\n",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 660,
+		"y": 1640,
+		"wires": [
+			[
+				"2475c75dd7a5a6a4"
+			]
+		]
+	},
+	{
+		"id": "e8c21a64d33f1a06",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "Palmrest",
+		"func": "var payload_filter_country= msg.payload.country;\nvar payload_filter_color= msg.payload.color;\n\nmsg.payload = msg.payload.commodity;\n\nif (payload_filter_color == 'others') {\n    msg.discoveryparams =  {\n  \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n    \"filter\":\"extracted_metadata.filename:ANTMAN-16-2021.csv\".concat(\n    ',',\"Functional_Description:\",payload_filter_country,\n    ',',\"Functional_Description:!Silver\")\n\n    };\n} else {\n    msg.discoveryparams =  {\n      \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n      \"filter\":\"extracted_metadata.filename:ANTMAN-16-2021.csv\".concat(\n          ',',\"Functional_Description:\",payload_filter_country,\n          ',',payload_filter_color)\n    };\n}\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 660,
+		"y": 1680,
+		"wires": [
+			[
+				"2475c75dd7a5a6a4"
+			]
+		]
+	},
+	{
+		"id": "06089515c71d270b",
+		"type": "switch",
+		"z": "bbf0a28b56acf59d",
+		"name": "check commodity",
+		"property": "payload.commodity",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "LCD",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "MOTHERBOARD",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "BATTERY",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "PALMREST",
+				"vt": "str"
+			}
+		],
+		"checkall": "false",
+		"repair": false,
+		"outputs": 4,
+		"x": 450,
+		"y": 1600,
+		"wires": [
+			[
+				"f8d5d7db2457106f"
+			],
+			[
+				"2fab59e6fb9cd4e7"
+			],
+			[
+				"8053d2546e0ad8b0"
+			],
+			[
+				"e8c21a64d33f1a06"
+			]
+		]
+	},
+	{
+		"id": "fd376f2f8fcdea1a",
+		"type": "switch",
+		"z": "bbf0a28b56acf59d",
+		"name": "check commodity",
+		"property": "payload.commodity",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "LCD",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "MOTHERBOARD",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "BATTERY",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "PALMREST",
+				"vt": "str"
+			}
+		],
+		"checkall": "false",
+		"repair": false,
+		"outputs": 4,
+		"x": 450,
+		"y": 1820,
+		"wires": [
+			[
+				"f00cc8e261d32f12"
+			],
+			[
+				"41d4bba7ddd25b56"
+			],
+			[
+				"332e13d96e7e537e"
+			],
+			[
+				"766794b048d1ae0a"
+			]
+		]
+	},
+	{
+		"id": "f00cc8e261d32f12",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "LCD",
+		"func": "msg.payload = msg.payload.commodity;\n\nmsg.discoveryparams =  {\n  \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n  \"filter\":\"extracted_metadata.filename:ANTMAN-14-2021.csv, Commodity: LCD\"\n      \n    \n};\n\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 610,
+		"y": 1760,
+		"wires": [
+			[
+				"2475c75dd7a5a6a4"
+			]
+		]
+	},
+	{
+		"id": "41d4bba7ddd25b56",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "Motherboard",
+		"func": "var payload_filter_core= msg.payload.core;\nvar payload_filter_graphic= msg.payload.graphic;\n\nmsg.payload = msg.payload.commodity;\n\nmsg.discoveryparams =  {\n  \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n  \"filter\":\"extracted_metadata.filename:ANTMAN-14-2021.csv\".concat(\n      ',',\"Part_Description:\",payload_filter_core,\n      ',',\"Functional_Description:\",payload_filter_graphic)\n      \n    \n};\n\nreturn msg;\n\n",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 630,
+		"y": 1800,
+		"wires": [
+			[
+				"2475c75dd7a5a6a4"
+			]
+		]
+	},
+	{
+		"id": "332e13d96e7e537e",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "Battery",
+		"func": "var payload_filter_cell= msg.payload.cell;\nvar payload_filter_whr= msg.payload.whr;\n\nmsg.payload = msg.payload.commodity;\n\nmsg.discoveryparams =  {\n  \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n  \"filter\":\"extracted_metadata.filename:ANTMAN-14-2021.csv\".concat(\n      ',',\"Functional_Description:\",payload_filter_cell.slice(0,1),',',payload_filter_whr)\n    };\n\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 620,
+		"y": 1840,
+		"wires": [
+			[
+				"2475c75dd7a5a6a4"
+			]
+		]
+	},
+	{
+		"id": "766794b048d1ae0a",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "Palmrest",
+		"func": "var payload_filter_country= msg.payload.country;\nvar payload_filter_color= msg.payload.color;\n\nmsg.payload = msg.payload.commodity;\n\nif (payload_filter_color == 'others') {\n    msg.discoveryparams =  {\n  \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n    \"filter\":\"extracted_metadata.filename:ANTMAN-14-2021.csv\".concat(\n    ',',\"Functional_Description:\",payload_filter_country,\n    ',',\"Functional_Description:!Silver\")\n\n    };\n} else {\n    msg.discoveryparams =  {\n      \"collectionIds\": [\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n      \"filter\":\"extracted_metadata.filename:ANTMAN-14-2021.csv\".concat(\n          ',',\"Functional_Description:\",payload_filter_country,\n          ',',payload_filter_color)\n    };\n}\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 620,
+		"y": 1880,
+		"wires": [
+			[
+				"2475c75dd7a5a6a4"
+			]
+		]
+	},
+	{
+		"id": "357542bf6d025784",
+		"type": "switch",
+		"z": "bbf0a28b56acf59d",
+		"name": "platform",
+		"property": "payload.platform",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "platform",
+				"vt": "str"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 1,
+		"x": 300,
+		"y": 1440,
+		"wires": [
+			[
+				"dcbce0e81bf2dfb5"
+			]
+		]
+	},
+	{
+		"id": "dcbce0e81bf2dfb5",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "",
+		"func": "msg.payload = msg.payload.data;\nmsg.discoveryparams = {\n    \"collectionIds\":[\"25f05367-dff8-5bf9-0000-01811ccde6d7\"],\n    \"filter\":\"extracted_metadata.filename:Proteus_Platform.csv\".concat(\n      ',',\"Proteus_Platform:\",msg.payload.match(/\\d+/g)[0].slice(0,2).concat('*'))\n};\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 460,
+		"y": 1380,
+		"wires": [
+			[
+				"c3bd7241c3ec3abc",
+				"8c19382033bb0a6a"
+			]
+		]
+	},
+	{
+		"id": "c3bd7241c3ec3abc",
+		"type": "watson-discovery-v2-project-manager",
+		"z": "bbf0a28b56acf59d",
+		"name": "Wistron WD",
+		"projectId": "ac32c559-aaa3-4792-91cf-02b5d801d92a",
+		"projectName": "",
+		"collectionName": "",
+		"description": "",
+		"language": "en",
+		"projectType": "document_retrieval",
+		"collectionId": "",
+		"queryId": "",
+		"discovery-method": "querySearch",
+		"service-endpoint": "https://api.us-south.discovery.watson.cloud.ibm.com/instances/2c05e41f-365b-4c6a-8acd-16ebeafc9200",
+		"x": 650,
+		"y": 1420,
+		"wires": [
+			[
+				"756e5c6989c717e2",
+				"6817b4ffc536fb55"
+			]
+		]
+	},
+	{
+		"id": "756e5c6989c717e2",
+		"type": "debug",
+		"z": "bbf0a28b56acf59d",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "discovery_response",
+		"targetType": "msg",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 930,
+		"y": 1360,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "6817b4ffc536fb55",
+		"type": "function",
+		"z": "bbf0a28b56acf59d",
+		"name": "",
+		"func": "var results = msg.discovery_response.matching_results;\n\nmsg.payload = {\n    \"arr\": [{\n        \"response_type\": \"text\",\n        \"text\": \"The possible Proteus_Platform: \\n\\n\"\n        }]\n    };\n\nif (results > 0){\n    var Proteus_Platform;\n    \n    for (i=0;i<results;i++){\n        Proteus_Platform = msg.discovery_response.results[i].Proteus_Platform;\n        pp_list = {\n            \"response_type\": \"text\",\n            \"text\": Proteus_Platform \n            }\n        msg.payload.arr.push(pp_list)\n    }\n\n} else {\n    msg.payload = {\n    \"arr\": [{\n        \"response_type\": \"text\",\n        \"text\": \"Sorry, Please verify filter criteria again.\"\n        }]\n    };\n}\n\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 880,
+		"y": 1480,
+		"wires": [
+			[
+				"84497646df3159ba"
+			]
+		]
+	},
+	{
+		"id": "84497646df3159ba",
+		"type": "http response",
+		"z": "bbf0a28b56acf59d",
+		"name": "",
+		"statusCode": "",
+		"headers": {
+
+		},
+		"x": 1030,
+		"y": 1480,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "8c19382033bb0a6a",
+		"type": "debug",
+		"z": "bbf0a28b56acf59d",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "true",
+		"targetType": "full",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 610,
+		"y": 1320,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "a700e514cb39fb9f",
+		"type": "debug",
+		"z": "bbf0a28b56acf59d",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "payload",
+		"targetType": "msg",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 470,
+		"y": 1200,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "7e9ec51b3e41ab34",
+		"type": "http in",
+		"z": "abf812f18fa52ccd",
+		"name": "",
+		"url": "/chat",
+		"method": "post",
+		"upload": false,
+		"swaggerDoc": "",
+		"x": 410,
+		"y": 340,
+		"wires": [
+			[
+				"f6f6fcbced3ff5ee",
+				"be883a0a85947954"
+			]
+		]
+	},
+	{
+		"id": "2c597684178c4f49",
+		"type": "http response",
+		"z": "abf812f18fa52ccd",
+		"name": "",
+		"statusCode": "",
+		"headers": {
+
+		},
+		"x": 1510,
+		"y": 640,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "f6f6fcbced3ff5ee",
+		"type": "switch",
+		"z": "abf812f18fa52ccd",
+		"name": "if chat is not null",
+		"property": "payload.data",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "nempty"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 1,
+		"x": 620,
+		"y": 320,
+		"wires": [
+			[
+				"a743bf5602a1a7e4"
+			]
+		]
+	},
+	{
+		"id": "63510db38ebb1991",
+		"type": "debug",
+		"z": "abf812f18fa52ccd",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "false",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 1470,
+		"y": 480,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "a352298aa0bdb885",
+		"type": "inject",
+		"z": "abf812f18fa52ccd",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": false,
+		"onceDelay": 0.1,
+		"topic": "",
+		"payload": "{\"data\":\"Can you plan a trip to Japan?\"}",
+		"payloadType": "json",
+		"x": 390,
+		"y": 620,
+		"wires": [
+			[
+				"a743bf5602a1a7e4"
+			]
+		]
+	},
+	{
+		"id": "a743bf5602a1a7e4",
+		"type": "function",
+		"z": "abf812f18fa52ccd",
+		"name": "",
+		"func": "data = msg.payload.data\nmemory = msg.payload.memory\nformat = {\n  \"output\": {\n    \"generic\":{\n        \"text\":\"<Here is plain text response>\",\n        \"option\":{\n        \"title\":\"<title of options>\",\n        \"options\": [\n          {\n            \"label\": \"<option 1 name>\",\n            \"value\": {\n              \"input\": {\n                \"text\": \"<the text which will sent back as input text to dialog> \"\n              }\n            }\n          },\n          {\n            \"label\": \"<option 2 name>\",\n            \"value\": {\n              \"input\": {\n                \"text\": \"<the text which will sent back as input text to dialog>\"\n              }\n            }\n          },\n          {\n            \"label\": \"<option 3 name>\",\n            \"value\": {\n              \"input\": {\n                \"text\": \"<the text which will sent back as input text to dialog>\"\n              }\n            }\n          }\n        ]\n            \n        }\n        \n   \n    }\n  }\n}\n\n\n\nmsg.payload = {\n    \"model\":\"gpt-3.5-turbo-0301\",\n    \"messages\":[\n        {\"role\":\"user\",\"content\":\"You are AGI-Demo, An ai designed to become a tour guide.\\\nYour decisions must always be made independently without seeking user assistance. Play to your strengths as an LLM and pursue simple strategies with no legal complications.\\\n\\\nDialog type:\\\n1. Option: Options for user to choose which action to do next, can be more than three options. Note that the text in the options will be sent back to dialog as a input, so this need more details./n\\\n2. Text: Detail explanation of the answer./n\\\n\\\nConstraints:\\\n1. ~4000 word limit for short term memory. Your short term memory is short, so immediately save important information to files.\\\n2. If you are unsure how you previously did something or want to recall past events, thinking about similar events will help you remember.\\\n3. No user assistance.\\\n4. Make sure option field is not empty and there is always an option \\\"End conversation\\\". \\\n\\\nPerformance Evaluation:\\\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\\\n2. Constructively self-criticize your big-picture behavior constantly.\\\n3. Reflect on past decisions and strategies to refine your approach.\\\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.\\\n\\\nYou should only respond in JSON format as described below \\\nResponse Format:\" + JSON.stringify(format) + \"/n\\\nEnsure the response can beparsed by Python json.loads \\\nThe current time and date is Fri Apr 28 01:48:03 2023 \\\nThis reminds you of these events from your past: \"+ JSON.stringify(memory)},\n{\"role\":\"user\",\"content\":\"Answer the question:\"+ data +\"/n \\\nDetermine which dialog to use, and respond using the format specified above (don't need to reply anything else other than JSON):\"}\n        ],\n        \"temperature\":0.7,\n        \"top_p\":1,\n        \"n\":1,\n        \"stream\":false,\n        \"max_tokens\":300,\n        \"presence_penalty\":0,\"frequency_penalty\":0}\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 820,
+		"y": 480,
+		"wires": [
+			[
+				"be883a0a85947954",
+				"c41989d8d405b4d0"
+			]
+		]
+	},
+	{
+		"id": "be883a0a85947954",
+		"type": "debug",
+		"z": "abf812f18fa52ccd",
+		"name": "",
+		"active": true,
+		"tosidebar": true,
+		"console": false,
+		"tostatus": false,
+		"complete": "payload",
+		"targetType": "msg",
+		"statusVal": "",
+		"statusType": "auto",
+		"x": 950,
+		"y": 340,
+		"wires": [
+
+		]
+	},
+	{
+		"id": "c41989d8d405b4d0",
+		"type": "http request",
+		"z": "abf812f18fa52ccd",
+		"name": "",
+		"method": "POST",
+		"ret": "obj",
+		"paytoqs": "ignore",
+		"url": "https://api.openai.com/v1/chat/completions",
+		"tls": "",
+		"persist": true,
+		"proxy": "",
+		"insecureHTTPParser": false,
+		"authType": "bearer",
+		"senderr": true,
+		"x": 1050,
+		"y": 420,
+		"wires": [
+			[
+				"3842582639c1552f",
+				"63510db38ebb1991"
+			]
+		]
+	},
+	{
+		"id": "3842582639c1552f",
+		"type": "function",
+		"z": "abf812f18fa52ccd",
+		"name": "",
+		"func": "function fixJsonSyntaxError(jsonString) {\n  let fixedJsonString = jsonString;\n  \n  // Check if the string is already parsable\n  try {\n      console.log('here')\n    JSON.parse(jsonString);\n  } catch (error) {\n    // If not, attempt to fix the error\n    \n    if (error instanceof SyntaxError) {\n      const startIndex = error.message.indexOf('position') + 9;\n      const endIndex = error.message.length;\n      const errorPosition = parseInt(error.message.substring(startIndex, endIndex));\n      \n      fixedJsonString = jsonString.substring(0, errorPosition - 1) + jsonString.substring(errorPosition);\n      //msg.payload = {\"startIndex\":startIndex,\"errorPosition\":errorPosition}\n      // Attempt to parse the fixed string\n      try {\n        JSON.parse(fixedJsonString);\n      } catch (error) {\n        // If the fixed string is still not parsable, return the original string\n        fixedJsonString = jsonString;\n      }\n    }\n  }\n  \n  return fixedJsonString;\n}\n\n\nmsg.payload = JSON.parse(fixJsonSyntaxError(msg.payload.choices[0].message.content))\n// msg.payload = {\"output\":\n//     {\"generic\":{\n//         \"text\":\"Sure, I can help you plan your trip to America. Which city or state are you interested in visiting?\",\n//         \"option\":{\n//         \"title\":\"Popular destinations in America\",\n//         \"options\":[\n//             {\n//                 \"label\":\"New York City\",\"value\":{\n//                 \"input\":{\n//                     \"text\":\"I want to visit New York City\"}}},\n//             {\n//                 \"label\":\"Los Angeles\",\n//                 \"value\":{\n//                     \"input\":{\n//                         \"text\":\"I want to visit Los Angeles\"}}},\n//             {\n//                 \"label\":\"Miami\",\n//                 \"value\":{\n//                     \"input\":{\n//                         \"text\":\"I want to visit Miami\"}}\n                \n//             }\n//             ]\n            \n//         }\n        \n   \n//     },\n//      \"answered\":true\n// }}\n\n\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [
+
+		],
+		"x": 1220,
+		"y": 560,
+		"wires": [
+			[
+				"2c597684178c4f49",
+				"63510db38ebb1991"
+			]
+		]
+	}
+]
