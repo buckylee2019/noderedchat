@@ -15,7 +15,7 @@
         "node-red-node-watson": "0.10.x",
         "node-red-nodes-cf-sqldb-dashdb": "0.x",
         "node-red-contrib-slack": "2.0.0",
-        "node-red-contrib-google-sheets":"1.1.2,
+        "node-red-contrib-google-sheets":"1.1.2",
         "node-red-contrib-python-function":"0.0.5",
         "node-red-contrib-python3-function":"0.0.4",
         "node-red-dashboard":"3.1.7"
